@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.base.setup</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="100"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='integration']" position="after">                     
+                    <h2>Server Tools</h2>                     
+                    <div class="row mt16 o_settings_container">                              
+                    <div class="col-12 col-lg-3 o_setting_box">
+                    <div class="col-12 o_setting_box">  
+                              <div class="o_setting_left_pane">
+                                <field name="module_attachment_unindex_content" class="oe_inline" />
+                              </div>
+                              <div class="o_setting_right_pane">                                    
+                                    <label for="module_attachment_unindex_content"/> 
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                              </div>                            
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_auditlog" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_auditlog" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">                             
+                                <div class="o_setting_left_pane">
+                                    <field name="module_auto_backup" class="oe_inline" />
+                                </div>                                                                 
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_auto_backup" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_base_cron_exclusion" class="oe_inline" />
+                                </div>                             
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_base_cron_exclusion" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                     <field name="module_base_exception" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_base_exception" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_base_fontawesome" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_base_fontawesome" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_base_jsonify" class="oe_inline" />
+                                </div>                              
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_base_jsonify" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                    </div>
+            </div>
+                            <div class="col-12 col-lg-3 o_setting_box">
+                    <div class="col-12 o_setting_box">  
+                              <div class="o_setting_left_pane">
+                                <field name="module_base_kanban_stage" class="oe_inline" />
+                              </div>
+                              <div class="o_setting_right_pane">                                    
+                                    <label for="module_base_kanban_stage"/> 
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                              </div>                            
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_base_search_fuzzy" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_base_search_fuzzy" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">                             
+                                <div class="o_setting_left_pane">
+                                    <field name="module_base_technical_user" class="oe_inline" />
+                                </div>                                                                 
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_base_technical_user" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_company_country" class="oe_inline" />
+                                </div>                             
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_company_country" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                     <field name="module_database_cleanup" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_database_cleanup" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_datetime_formatter" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_datetime_formatter" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                    </div>  
+                    <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_sentry" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_sentry" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                    </div>                 
+            </div>
+                            <div class="col-12 col-lg-3 o_setting_box">
+                    <div class="col-12 o_setting_box">  
+                              <div class="o_setting_left_pane">
+                                <field name="module_dbfilter_from_header" class="oe_inline" />
+                              </div>
+                              <div class="o_setting_right_pane">                                    
+                                    <label for="module_dbfilter_from_header"/> 
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                              </div>                            
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_excel_import_export" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_excel_import_export" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">                             
+                                <div class="o_setting_left_pane">
+                                    <field name="module_excel_import_export_demo" class="oe_inline" />
+                                </div>                                                                 
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_excel_import_export_demo" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_fetchmail_notify_error_to_sender" class="oe_inline" />
+                                </div>                             
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_fetchmail_notify_error_to_sender" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                     <field name="module_html_image_url_extractor" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_html_image_url_extractor" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_html_text" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_html_text" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                    </div>                  
+            </div>
+                            <div class="col-12 col-lg-3 o_setting_box">
+                    <div class="col-12 o_setting_box">  
+                              <div class="o_setting_left_pane">
+                                <field name="module_module_analysis" class="oe_inline" />
+                              </div>
+                              <div class="o_setting_right_pane">                                    
+                                    <label for="module_module_analysis"/> 
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                              </div>                            
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_module_auto_update" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_module_auto_update" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">                             
+                                <div class="o_setting_left_pane">
+                                    <field name="module_onchange_helper" class="oe_inline" />
+                                </div>                                                                 
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_onchange_helper" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_scheduler_error_mailer" class="oe_inline" />
+                                </div>                             
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_scheduler_error_mailer" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                     <field name="module_sql_export" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_sql_export" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                    </div>
+                    <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_sql_request_abstract" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_sql_request_abstract" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                          </div>                  
+                     </div>
+                    </div>                                                
+                                      
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+                
